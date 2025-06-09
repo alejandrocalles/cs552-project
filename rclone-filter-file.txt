@@ -1,0 +1,4 @@
++ /pipeline.py
+
+# Remove everything not listed
+- /**
