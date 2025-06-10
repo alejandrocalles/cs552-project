@@ -1,4 +1,6 @@
 + /pipeline.py
++ /upload.py
++ /ms_marco.py
 
 # Remove everything not listed
 - /**
