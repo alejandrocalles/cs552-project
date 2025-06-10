@@ -2,6 +2,7 @@
 + /radit.py
 + /upload.py
 + /ms_marco.py
++ /data/**
 
 # Remove everything not listed
 - /**
