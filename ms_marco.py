@@ -2,7 +2,7 @@ import os
 import datasets
 import pandas as pd
 
-def create_ms_marco_subset(upload_to: str = 'gabrieljimenez/ms-marco-subset') -> None:
+def create_ms_marco_subset(upload_to: str | None = None) -> None:
     dataset: datasets.DatasetDict = datasets.load_dataset('microsoft/ms_marco', 'v1.1')
 
     df: pd.DataFrame = dataset['train'].to_pandas()
@@ -22,13 +22,14 @@ def create_ms_marco_subset(upload_to: str = 'gabrieljimenez/ms-marco-subset') ->
     clean_dataset = datasets.Dataset.from_pandas(clean_df, preserve_index=False).rename_column('answers', 'answer')
     final_dataset = clean_dataset.train_test_split(test_size=0.2, shuffle=False)
 
-    if 'HF_TOKEN' in os.environ:
-        final_dataset.push_to_hub(
-        repo_id=upload_to,
-        token=os.getenv('HF_TOKEN')
-        )
-    else:
+    if upload_to is None:
+        return
+
+    if 'HF_TOKEN' not in os.environ:
         print("Unable to find huggingface token, please ensure the environment variable 'HF_TOKEN' exists and try again.")
+        return
+        
+    final_dataset.push_to_hub(repo_id=upload_to, token=os.getenv('HF_TOKEN'))
 
 if __name__=="__main__":
     create_ms_marco_subset()

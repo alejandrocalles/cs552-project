@@ -1,0 +1,319 @@
+Advanced computer architecture:
+  - Register renaming
+  - Instruction-level parallelism
+  - Simultaneous multithreading
+  - Very long instruction word
+  - Branch predictor
+  - Speculative execution
+  - Binary translation
+  - Embedded system
+  - Digital signal processor
+  - Information leakage
+  - Trusted execution environment
+  - Side-channel attack
+  - High-level synthesis
+Algorithms II:
+  - Matroid
+  - Greedy algorithm
+  - Linear programming
+  - Dual linear program
+  - Maximum cardinality matching
+  - Perfect matching
+  - Hall's marriage theorem
+  - Vertex cover
+  - Matching (graph theory)
+  - Hungarian algorithm
+  - Randomized algorithm
+  - Convex optimization
+  - Approximation algorithm
+  - Multiplicative weight update method
+  - Online algorithm
+  - Streaming algorithm
+  - Karger's algorithm
+  - Submodular set function
+  - Random walk
+  - Spectral graph theory
+  - Nearest neighbor search
+  - Count sketch
+Cryptography and security:
+  - Information theory
+  - Shannon-Hartley theorem
+  - Vigenère cipher
+  - Enigma machine
+  - One-time pad
+  - Cryptography
+  - Diffie-Hellman key exchange
+  - ElGamal encryption
+  - RSA cryptosystem
+  - Elliptic-curve cryptography
+  - Brute-force search
+  - Stream cipher
+  - Block cypher
+  - Symmetric-key algorithm
+  - Birthday problem
+  - Message authentication code
+  - Hash function
+  - Public-key cryptography
+  - Digital signature
+  - Post-quantum cryptography
+  - Password-based cryptography
+  - Secure communication
+  - Computational trust
+  - Trust on first use
+  - Wi-Fi
+  - Bitcoin
+  - Mobile telephony
+  - EMV
+  - Bluetooth
+  - Biometric passport
+  - Transport Layer Security
+Decentralized Systems Engineering:
+  - Packet forwarding
+  - Routing
+  - IP Routing
+  - Peer-to-peer
+  - Gossip protocol
+  - Usenet
+  - Rumor spread in social network
+  - Sybil attack
+  - HTTP Flood
+  - Cryptocurrency
+  - Distributed ledger
+  - Consensus (computer science)
+  - Distributed hash table
+  - Self-sovereign identity
+  - Homomorphic encryption
+  - Riffle (anonymity network)
+  - Dining cryptographers problem
+  - Mix network
+  - Onion routing
+  - Anonymous P2P
+  - BitTorrent
+  - Convergent encryption
+  - Network File System
+  - Version control
+  - Chaos engineering
+Distributed algorithms:
+  - Atomic broadcast
+  - Causal consistency
+  - Terminating Reliable Broadcast
+  - Atomic commit
+  - Message passing
+  - Shared memory
+  - Byzantine fault
+  - Self-stabilization
+  - Population protocol
+  - Distributed artificial intelligence
+Foundations of software:
+  - Type theory
+  - Simply typed lambda calculus
+  - Lambda calculus
+  - Type constructor
+  - Formal language
+  - Backus-Naur form
+  - Reference (computer science)
+  - Exception handling
+  - Recursive data type
+  - Polymorphism (computer science)
+  - Combinatory logic
+  - Calculus of constructions
+Information security and privacy:
+  - Information security
+  - Information
+  - Cyberattack
+  - Data breach
+  - Personal data
+  - Social engineering (security)
+  - Authentication
+  - Multi-factor authentication
+  - Authorization
+  - Identity and access management
+  - Access control
+  - Admission control
+  - Compartmentalization (information security)
+  - Security engineering
+  - Privacy-enhancing technologies
+  - Information privacy
+  - Data security
+  - Data anonymization
+  - Data re-identification
+  - Privacy engineering
+  - Blockchain
+  - Distributed ledger
+  - Cryptographic hash function
+  - Merkle tree
+  - Cryptocurrency
+Machine Learning:
+  - Machine Learning
+  - Artificial intelligence
+  - Computational statistics
+  - Linear model
+  - Linear regression
+  - Supervised learning
+  - Generalization error
+  - Overfitting
+  - Exploratory data analysis
+  - Feature engineering
+  - Logistic regression
+  - Ridge regression
+  - Lasso (statistics)
+  - Logistic function
+  - k-nearest neighbors algorithm
+  - kernel smoother
+  - Nearest-neighbor interpolation
+  - Support vector machine
+  - Kernel method
+  - Representer theorem
+  - Curse of dimensionality
+  - Bias-variance tradeoff
+  - Cross-validation (statistics)
+  - Statistical model validation
+  - Neural network (machine learning)
+  - Deep learning
+  - Artificial neuron
+  - Perceptron
+  - Unsupervised learning
+  - Multilayer perceptron
+  - Gradient descent
+  - Newton's method in optimization
+  - Stochastic gradient descent
+  - Backpropagation
+  - M-estimator
+  - Learning rate
+  - Dilution (neural networks)
+  - Regularization (mathematics)
+  - Data augmentation
+  - Convolutional neural network
+  - Activation function
+  - Filter (signal processing)
+  - Batch normalization
+  - Vanishing gradient problem
+  - Normalization (machine learning)
+  - Computer vision
+  - Signal processing
+  - Self-supervised learning
+  - K-means clustering
+  - Expectation-maximization algorithm
+  - Mixture model
+  - EM algorithm and GMM model
+  - Principal component analysis
+  - Matrix factorization (recommender systems)
+  - Recommender system
+  - Adversarial machine learning
+  - Generative adversarial network
+  - Diffusion model
+Modern natural language processing:
+  - Natural language processing
+  - Word embedding
+  - Information retrieval
+  - Information science
+  - Computational linguistics
+  - Language model
+  - Large language model
+  - Recursive neural network
+  - Recurrent neural network
+  - Long short-term memory
+  - Gating mechanism
+  - Gated recurrent unit
+  - Transformer (deep learning architecture)
+  - Attention Is All You Need
+  - Generative artificial intelligence
+  - Generative model
+  - Question answering
+  - Seq2seq
+  - Attention (machine learning)
+  - Generative pre-trained transformer
+  - Weak supervision
+  - Transfer learning
+  - BERT (language model)
+  - ELMo
+  - GPT-2
+  - T5 (language model)
+  - Bias (statistics)
+  - Algorithmic bias
+  - Natural language generation
+  - Autoencoder
+  - Mixture of experts
+  - Retrieval augmented generation
+  - Hallucination (artificial intelligence)
+  - Knowledge graph
+  - Multimodal learning
+Systems for data management and data science:
+  - Database
+  - Distributed database
+  - Distributed Data Management Architecture
+  - Data management
+  - Replication (computing)
+  - Data communication
+  - Data consistency
+  - Consistency (database systems)
+  - CAP theorem
+  - Memory hierarchy
+  - Relational model
+  - Primary key
+  - Key-value database
+  - Consistency model
+  - Distributed data store
+  - Data analysis
+  - Ordered Key-Value Store
+  - Multi-model database
+  - File system
+  - Clustered file system
+  - Server (computing)
+  - Linked list
+  - Stream processing
+  - Graph database
+  - Parallel computing
+  - Apache Spark
+  - Task parallelism
+  - Data parallelism
+  - Fault tolerance
+  - Query optimization
+  - Query plan
+  - Join (relational algebra)
+  - Join (SQL)
+  - Hash join
+  - Nested loop join
+  - Sort-merge join
+TCP/IP networking:
+  - Computer network
+  - Internet
+  - Internet protocol suite
+  - Link layer
+  - Internet layer
+  - Transport layer
+  - Application layer
+  - Internet Protocol
+  - IP address
+  - Datagram
+  - Transmission Control Protocol
+  - User Datagram Protocol
+  - Network packet
+  - Packet switching
+  - Statistical time-division multiplexing
+  - Link-state routing protocol
+  - Network socket
+  - Border Gateway Protocol
+  - Inter-domain routing
+  - Distance-vector routing protocol
+  - Open Shortest Path First
+  - TCP congestion control
+  - Tunneling protocol
+  - Encapsulation (networking)
+  - OSI model
+Other:
+  - Compiler
+  - Operating system
+  - System software
+  - Systems programming
+  - Memory management
+  - Computer architecture
+  - Multiprocessor system architecture
+  - Multi-core processor
+  - Computer graphics (computer science)
+  - Speech processing
+  - Computational complexity
+  - Data and information visualization
+  - Concurrent computing
+  - Reinforcement learning
+  - Formal verification
