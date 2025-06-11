@@ -1,8 +1,20 @@
+# Executable files
++ /main.py
++ /generate_documents.py
++ /create_evaluation_dataset.py
++ /ms_marco.py
+
+# Classes
 + /pipeline.py
 + /radit.py
+
+# Utils
 + /upload.py
-+ /ms_marco.py
+
+# Data
+- /data/m1_preference_data.json
 + /data/**
++ /requirements.txt
 
 # Remove everything not listed
 - /**

@@ -8,23 +8,27 @@ class RAGPipeline:
     A simple RAG pipeline for efficient training.
     """
 
-    def __init__(self, model, tokenizer, encoder_model, k=1, cuda=False):
+    def __init__(self, model, tokenizer, encoder_model, k=1, cuda=False, lr=1e-5):
         self.model = model
         self.tokenizer = tokenizer
         self.k = k
         self.encoder_model = encoder_model
         self.cuda = cuda
-        self.model_optimizer = Adam(self.model.parameters(), lr=1e-5)
-        self.encoder_optimizer = Adam(self.encoder_model.parameters(), lr=1e-5)
+        self.model_optimizer = Adam(self.model.parameters(), lr=lr)
+        self.encoder_optimizer = Adam(self.encoder_model.parameters(), lr=lr)
 
     def retrieve_documents(self, query: str, documents: list[str]):
         if len(documents) < self.k:
             raise ValueError("Invalid input: number of candidate documents is smaller than retrieval 'k'.")
 
-        device = 'cuda' if self.cuda else None
+        tokenized_inputs = self.encoder_model.tokenizer([query] + documents, padding=True, return_tensors="pt")
+        if self.cuda:
+            for key in tokenized_inputs.keys():
+                tokenized_inputs[key] = tokenized_inputs[key].to('cuda')
 
-        embedded_query = self.encoder_model.encode(query, convert_to_tensor=True, device=device)
-        embedded_documents = self.encoder_model.encode(documents, convert_to_tensor=True, device=device)
+        outputs = self.encoder_model(tokenized_inputs)
+        embedded_query = outputs['sentence_embedding'][0]
+        embedded_documents = outputs['sentence_embedding'][1:]
 
         scores = cosine_similarity(embedded_query, embedded_documents)
 
@@ -93,13 +97,11 @@ class RAGPipeline:
             inputs['input_ids'] = inputs['input_ids'].to('cuda')
             inputs['labels'] = inputs['labels'].to('cuda')
             inputs['attention_mask'] = inputs['attention_mask'].to('cuda')
-            labels['input_ids'] = labels['input_ids'].to('cuda')
-            labels['attention_mask'] = labels['attention_mask'].to('cuda')
 
         outputs = self.model(**inputs)
 
         shifted_logits = outputs['logits'][:, :-1, :]
-        shifted_labels = labels['input_ids'][:, 1:]
+        shifted_labels = inputs['input_ids'][:, 1:]
 
         loss_function = CrossEntropyLoss(reduction="none", ignore_index=-100)
         losses_per_label = loss_function(
